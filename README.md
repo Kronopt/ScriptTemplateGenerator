@@ -1,28 +1,22 @@
-# PythonProjectTemplate
-Python Project Template/Skeleton
+# <Project Name>
+<badges: pypi version, supported python versions, downloads, CI, codecov, snyk, license>
 
-The purpose of this repository is to have all the files, folders and style conventions that are usually part of a
-standard python project in a single location.
+<small one line description of the project>
 
-Some things might not make sense for every project, but overall the most import elements are here.
+#### Dependencies
+* Python <version>
+* <other libraries>
 
-I created this template for my own personal use, but feel free to use it.
+#### Installation
 
-## How to use
-* Just copy the `Project` folder
+#### Usage / How to run
+<give code examples>
 
-or
+#### Documentation (link)
 
-* [Use this template directly](https://github.com/Kronopt/PythonProjectTemplate/generate)
-  and then move everything from the `Project` folder to the root of your project
+#### Features
 
-### Notes
-* Chose only one CI/CD pipeline (delete the one you don't want):
-    * **CicleCI** (`.circleci` folder)
-    * **Github Actions** (`.github` folder)
-* Chose only one testing library (delete the one you don't want and then edit
-  the `make.bat`/`Makefile` test and coverage functions with the correct command):
-    * **pytest** (`tests\test_pytest.py`)
-    * **nose2** (`tests\test_nose2.py`)
-    * **unittest** (`tests\test_unittest.py`)
-* Most files have variables in them (in the form of `<variable>`, like `<project_name>`) which you should edit
+#### Work in progress / Ideas for the Future
+<list whats is being worked on or ideas>
+
+#### Acknowledgments

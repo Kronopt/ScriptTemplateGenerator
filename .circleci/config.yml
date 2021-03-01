@@ -3,22 +3,26 @@
 version: 2
 
 jobs:
-  py38_tests:
+  py39_tests:
     docker:
-      - image: circleci/python:3.8.2
+      - image: circleci/python:3.9.0
     steps:
       - checkout
+
       - run:
           name: Install dependencies
           command: |
             make install-dependencies
             make install-dependencies-test
+
       - run:
           name: Lint
           command: make lint
+
       - run:
           name: Tests
           command: make test
+
       - run:
           name: Coverage
           command: |  # must define CODECOV_TOKEN enviroment variable in CircleCI
@@ -30,4 +34,4 @@ workflows:
   version: 2
   run_tests:
     jobs:
-      - py38_tests
+      - py39_tests
